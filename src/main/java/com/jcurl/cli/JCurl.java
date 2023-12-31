@@ -1,5 +1,6 @@
 package com.jcurl.cli;
 
+import com.jcurl.service.CurlService;
 import com.jcurl.service.CurlServiceImpl;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
@@ -36,7 +37,7 @@ public class JCurl implements Runnable{
             description = "The URL you would like make a request against.")
     private String url = "http://www.google.com";
 
-    private CurlServiceImpl curlService;
+    private CurlService curlService;
 
     public JCurl(CurlServiceImpl curlService){
         this.curlService = curlService;

@@ -20,13 +20,13 @@ import java.net.URL;
 )
 public class JCurl implements Runnable{
 
-    @Option(names = "-X" , description = "HTTP Method to use")
+    @Option(names = {"-X","--request"}, description = "HTTP Method to use")
     private String method = "GET";
 
-    @Option(names = "-d" , description = "Body for POST or PUT Request")
+    @Option(names = {"-d","--data"} , description = "Body for POST or PUT Request")
     private String body = "{}";
 
-    @Option(names = "-H" , description = "Headers for your Request")
+    @Option(names = {"-H","--header"} , description = "Headers for your Request")
     private String[] headers = {};
 
     @Option(names = "--verbose", description = "Output Request/Response", arity = "0")

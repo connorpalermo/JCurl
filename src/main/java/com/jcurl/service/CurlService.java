@@ -1,10 +1,11 @@
 package com.jcurl.service;
 
-import org.springframework.http.ResponseEntity;
+
+import okhttp3.Response;
 
 public interface CurlService {
-    ResponseEntity<String> curlGet(String url, String[] headers);
-    ResponseEntity<String> curlDelete(String url, String[] headers);
-    ResponseEntity<String> curlPost(String url, String body, String[] headers);
-    ResponseEntity<String> curlPut(String url, String body, String[] headers);
+    Response curlGet(String url, String[] headers);
+    Response curlDelete(String url, String[] headers);
+    Response curlPost(String url, String body, String[] headers);
+    Response curlPut(String url, String body, String[] headers);
 }

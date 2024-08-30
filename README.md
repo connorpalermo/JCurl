@@ -4,7 +4,7 @@ A simple implementation of curl in Java. Using Picocli.
 JCurl is exceptionally easy to use, simply run the following commands from the root directory:
 ```
 mvn clean compile assembly:single
-alias jcurl='java -cp "target/jCurl-1.0-SNAPSHOT-jar-with-dependencies.jar" com.jcurl.JCurlApplication
+alias jcurl='java -cp "target/jCurl-1.0-SNAPSHOT-jar-with-dependencies.jar" com.jcurl.JCurlApplication'
 ```
 You can add the above alias to your ~/.bashrc file if you don't want to keep running it. In future, may use a launcher script such as the [Application Assembler Maven Plugin](https://www.mojohaus.org/appassembler/) to avoid the alias.
 
